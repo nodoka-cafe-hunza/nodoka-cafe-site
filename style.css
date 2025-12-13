@@ -1,0 +1,82 @@
+/* 全体の基本 */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+
+/* ヘッダー */
+.site-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+}
+
+.logo {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+/* ナビ */
+.nav a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* コンテンツ幅 */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* ヒーロー */
+.hero {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.hero h2 {
+  margin: 0 0 8px;
+}
+
+/* ボタン */
+.btn {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* カード */
+.card {
+  margin-top: 16px;
+  padding: 18px;
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 12px;
+}
+
+/* フッター */
+.site-footer {
+  padding: 18px 20px;
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  text-align: center;
+}
