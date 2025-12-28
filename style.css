@@ -1,3 +1,41 @@
+.hero{
+  height: 70vh;
+  background-image: url("images/Hero/CafeViewHeroSpring16x9.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  position: relative;
+}
+
+.hero-title{
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+
+  color: #fff;
+  font-size: clamp(32px, 10vw, 64px);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.nav a{display: inline-block;
+  padding: 10px 38px;
+  border-radius: 9999px;
+  text-decoration: none;
+  color: #333;
+  background: #f2f2f2;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+
+
 /* 全体の基本 */
 body {
   margin: 0;
@@ -35,18 +73,6 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 24px 20px;
-}
-
-/* ヒーロー */
-.hero {
-  padding: 24px;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-}
-
-.hero h2 {
-  margin: 0 0 8px;
 }
 
 /* ボタン */
