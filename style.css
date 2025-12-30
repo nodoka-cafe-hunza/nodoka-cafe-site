@@ -22,6 +22,9 @@
   display: flex;
   justify-content: center;
   gap: 60px;
+ flex-wrap: nowrap;      /* 折り返さない */
+  overflow: hidden;       /* はみ出したら切る */
+  white-space: nowrap;    /* 文字を折り返さない */
 }
 
 .nav a{display: inline-block;
@@ -34,6 +37,76 @@
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+.news {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.news h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  max-height: 250px;       /* ← 高さ固定 */
+  overflow-y: auto;        /* ← 縦スクロール */
+  padding-right: 10px;     /* スクロールバー分の余白 */
+  background-color: #ecffda;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.news-item {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.news-item time {
+  font-size: 0.9rem;
+  color: #777;
+  display: block;
+}
+
+.quote-indent {
+  display: block;
+  margin-left: 18em;
+  font-size: 0.95em;
+}
+
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+/* 3列カード（Aboutなど） */
+.cards.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* 2列カード（将来用） */
+.cards.two {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 
 /* 全体の基本 */

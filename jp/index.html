@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 
+
+
 <body>
   <section class="hero">
     <h1 class="hero-title">Nodoka Cafe Hunza</h1>
@@ -23,21 +25,78 @@
     </nav>
   </header>
 
-  <main class="container">
+<section class="news">
+  <h2>最近のニュース</h2>
 
-      <h2>Slow down, taste Hunza.</h2>
-      <p>山の空気と、季節の食材。のどかな時間をどうぞ。</p>
-      <button class="btn">Menuを見る</button>
+ <div class="news-list">
+  <article class="news-item">
+    <time datetime="2025-01-01">2025.12.31</time>
+    <p>のどかカフェの公式サイトを公開しました。まだ作成中ですが…</p>
+  </article>
+
+<!-- ここにどんどん追加 -->
+</div>
+</section>
+
+ <main class="container">
+    <h1 class="page-title">のどかカフェについて</h1>
+    <p class="lead">
+      パキスタン北部フンザ。「桃源郷」とも呼ばれるこの場所で、ゆっくり流れる時間と、土地の食材を味わえる小さなカフェです。
+    </p>
+
+    <section class="section">
+      <h2>ストーリー</h2>
+      <div class="story">
+        <p>
+          2019年、旅でフンザを訪れたとき、雄大な山々に魅了されました。<br>
+          「ここを訪れた人が、山の景色や地元の食材をゆっくり楽しめる場所をつくりたい」<br>
+           <span class="quote-indent">—— そんな思いから、のどかカフェを始めました。</span>
+        </p>
+        <p>
+          忙しい旅の合間でも、ただお茶を飲んで景色を眺めるだけでも大丈夫です。<br>
+          ここが、あなたにとって “帰ってこれる場所” になれば嬉しいです。
+        </p>
+      </div>
     </section>
 
-    <section class="card">
-      <h3>Today’s highlight</h3>
-      <p>ヤク肉タコライス / モリーユ茸のクリームパスタ など（仮）</p>
+    <section class="section">
+      <h2>のどかカフェの3つのこと</h2>
+      <div class="cards three">
+        <div class="card">
+          <h3>フンザの食材</h3>
+          <p>杏やナッツ、季節の野菜やきのこなど、土地の恵みを大切にしています。</p>
+        </div>
+        <div class="card">
+          <h3>ゆっくり過ごす</h3>
+          <p>急がなくていい時間。ひと息つける温度感を、店づくりの中心に置いています。</p>
+        </div>
+        <div class="card">
+          <h3>旅の情報も</h3>
+          <p>おすすめの景色や季節のこと、道の状況なども、気軽に聞いてください。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>リンク</h2>
+      <div class="links">
+        <a class="btn primary" href="menu.html">メニューを見る</a>
+        <a class="btn" href="access-contact.html">アクセス・お問い合わせ</a>
+        <a class="btn" href="blog.html">ブログ</a>
+      </div>
+      <p style="color:#666; margin-top:12px; line-height:1.7;">
+        YouTube / Instagram も更新しています。
+      </p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <small>© Nodoka Cafe Hunza</small>
-  </footer>
-</body>
-</html>
+
+
+  <script>
+  const pos = sessionStorage.getItem('scrollY');
+  if (pos) window.scrollTo(0, pos);
+
+  window.addEventListener('beforeunload', () => {
+    sessionStorage.setItem('scrollY', window.scrollY);
+  });
+</script>
